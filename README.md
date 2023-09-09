@@ -26,6 +26,6 @@ Dimitar Hristov
 https://github.com/dimitarhristov86
 
 ## Screenshots
-![Screenshot from 2023-09-08 10-11-55.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-09-08%2010-11-55.png)
-![Screenshot from 2023-09-08 10-12-07.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-09-08%2010-12-07.png)
-![Screenshot from 2023-09-08 10-12-17.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-09-08%2010-12-17.png)
+![Screenshot from 2023-09-08 10-11-55.png](https://github.com/dimitarhristov86/ongaragebg/blob/master/Screenshot%20from%202023-09-08%2010-11-55.png)
+![Screenshot from 2023-09-08 10-12-07.png](https://github.com/dimitarhristov86/ongaragebg/blob/master/Screenshot%20from%202023-09-08%2010-12-07.png)
+![Screenshot from 2023-09-08 10-12-17.png](https://github.com/dimitarhristov86/ongaragebg/blob/master/Screenshot%20from%202023-09-08%2010-12-17.png)
