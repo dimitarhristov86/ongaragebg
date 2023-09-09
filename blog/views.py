@@ -14,7 +14,7 @@ class CategoryCreateView(LoginRequiredMixin, CreateView):
 
 
 def CategoryListView(request, cats):
-    category_posts = Post.objects.filter(categories=int(cats))
+    category_posts = Post.objects.filter(categories=int(cats)).order_by('-date_posted')
     return render(request, 'blog/categories_list.html', {'cats': cats, 'category_posts': category_posts})
 
 
