@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% for post in category_posts %}
+    {% if forloop.first %}
+    <h2 class="posts-list-heading">Posts by category {{ post.categories }}</h2>
+    {% endif %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <img class="post-img" src="{{ post.image.url }}">
+              <small style="color: #5505f5;">Last modified: {{ post.date_posted|date:"F d, Y" }}</small><br><br>
+              <h3><a class="article-title">{{ post.title }}</a></h3><br>
+              <h6>{{ post.content|slice:"0:100" }}..............</h6>
+              <a class="article-content-link" href="{% url 'post-detail' post.id %}">Read more</a>
+              <p class="article-posted" href="{% url 'blog-about' %}">Posted by: {{ post.author }}</p><br>
+            </div>
+          </div>
+        </article>
+    {% endfor %}
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+            <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+        {% endif %}
+        {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+              <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+              <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+            <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+        {% endif %}
+    {% endif %}
+{% endblock %}
