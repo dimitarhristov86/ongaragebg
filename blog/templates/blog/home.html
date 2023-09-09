@@ -8,10 +8,10 @@
               <small style="color: #5505f5;">Last modified: {{ post.date_posted|date:"F d, Y" }}</small><br><br>
               <h3><a class="article-title">{{ post.title }}</a></h3><br>
               <h6>{{ post.content|slice:"0:100" }}..............</h6>
+              <a class="article-content-link" href="{% url 'post-detail' post.id %}">Read more</a><br><br>
               {% if post.categories %}
                 <a class="post-category" href="{% url 'category-list' post.categories.pk %}">Category: {{ post.categories }}</a><br>
               {% endif %}
-              <a class="article-content-link" href="{% url 'post-detail' post.id %}">Read more</a>
               <p class="article-posted" href="{% url 'blog-about' %}">Posted by: {{ post.author }}</p><br>
             </div>
           </div>
