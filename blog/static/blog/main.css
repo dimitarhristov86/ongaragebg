@@ -159,5 +159,5 @@ a.article-title:hover {
 .posts-list-heading {
   color: #3681ba;
   margin-left: 20px;
-  text-shadow: 1px 1px 1px #3681ba, 0 0 1em #3681ba, 0 0 0.1em #3681ba;
+  text-shadow: 1px 0px 0px #3681ba, 0 0 1em #3681ba, 0 0 0.1em #3681ba;
 }
