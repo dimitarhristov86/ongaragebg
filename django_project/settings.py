@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 DEBUG = True
 
-ALLOWED_HOSTS = ['owngaragebg-4afc23f6e154.herokuapp.com']
+ALLOWED_HOSTS = ['owngaragebg-3022844ad3c2.herokuapp.com']
 
 
 # Application definition
