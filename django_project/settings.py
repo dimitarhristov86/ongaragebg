@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 DEBUG = True
 
-ALLOWED_HOSTS = ['owngaragebg-3022844ad3c2.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,23 +81,23 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("HEROKU_DB_NAME"),
-        'USER': os.environ.get("HEROKU_DB_USER"),
-        'PASSWORD': os.environ.get("HEROKU_DB_PASSWORD"),
-        'HOST': os.environ.get("HEROKU_DB_HOST"),
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.environ.get("HEROKU_DB_NAME"),
+#         'USER': os.environ.get("HEROKU_DB_USER"),
+#         'PASSWORD': os.environ.get("HEROKU_DB_PASSWORD"),
+#         'HOST': os.environ.get("HEROKU_DB_HOST"),
+#         'PORT': '5432'
+#     }
+# }
 
 
 # Password validation
@@ -138,7 +138,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -155,4 +154,4 @@ LOGIN_REDIRECT_URL = 'blog-home'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_SAVE_EVERY_REQUEST = True
 
-django_heroku.settings(locals())
+
