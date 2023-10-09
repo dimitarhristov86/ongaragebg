@@ -26,8 +26,6 @@ Contributors names and contact info
 Dimitar Hristov
 https://github.com/dimitarhristov86
 
-CoreyMSchafer
-https://github.com/CoreyMSchafer
 
 ## Screenshots
 ![Screenshot from 2023-09-08 10-11-55.png](https://github.com/dimitarhristov86/ongaragebg/blob/master/Screenshot%20from%202023-09-08%2010-11-55.png)
