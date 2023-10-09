@@ -16,7 +16,7 @@ Website for automotive news and insights.Sharing news from the best resources.
 
 ### Installing
 
-* clone repo https://github.com/dimitarhristov86/ongaragebg
+* clone repo https://github.com/dimitarhristov86/owngaragebg
 * How to install? run  $ pip install -r requirements.txt
 
 ## Authors
